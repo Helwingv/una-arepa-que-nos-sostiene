@@ -6,6 +6,8 @@ import { cooks } from '@/lib/cooks';
 import { useLanguage } from './language-provider';
 import { Portrait } from './portrait';
 
+const siteBasePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 export function CollectionGrid() {
   const { language, t } = useLanguage();
   const [query, setQuery] = useState('');
@@ -44,15 +46,15 @@ export function CollectionGrid() {
         <div className="cook-grid">
           {visible.map((profile, index) => (
             <article className="cook-card" key={profile.slug}>
-              <a href={`/cocineras/${profile.slug}/`} className="portrait-frame" aria-label={`${t.viewProfile}: ${profile.name}`}>
+              <a href={`${siteBasePath}/${profile.slug}/`} className="portrait-frame" aria-label={`${t.viewProfile}: ${profile.name}`}>
                 <Portrait src={profile.media.imageUrl} alt={profile.name} priority={index < 4} />
                 <span className="card-number" aria-hidden="true">{String(cooks.indexOf(profile) + 1).padStart(2, '0')}</span>
               </a>
               <div className="card-copy">
                 <p className="card-location">{profile.location}</p>
-                <h3><a href={`/cocineras/${profile.slug}/`}>{profile.name}</a></h3>
+                <h3><a href={`${siteBasePath}/${profile.slug}/`}>{profile.name}</a></h3>
                 <p className="card-dish">{profile.dish[language]}</p>
-                <a href={`/cocineras/${profile.slug}/`} className="card-link">
+                <a href={`${siteBasePath}/${profile.slug}/`} className="card-link">
                   {t.viewProfile}<ArrowUpRight aria-hidden="true" />
                 </a>
               </div>

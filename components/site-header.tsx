@@ -2,12 +2,14 @@
 
 import { useLanguage } from './language-provider';
 
+const siteBasePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 export function SiteHeader() {
   const { language, setLanguage, t } = useLanguage();
 
   return (
     <header className="site-header">
-      <a href="/" className="wordmark" aria-label={t.project}>
+      <a href={`${siteBasePath}/`} className="wordmark" aria-label={t.project}>
         <span className="wordmark-mark" aria-hidden="true"><span /></span>
         <span>{t.project}</span>
       </a>

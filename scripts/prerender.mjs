@@ -67,9 +67,9 @@ const routes = [
 ];
 
 for (const [path, profile, canonicalSlug] of routes) {
-  const directory = join(dist, 'cocineras', path);
+  const directory = join(dist, path);
   await mkdir(directory, { recursive: true });
   await writeFile(join(directory, 'index.html'), pageFor(profile, canonicalSlug));
 }
 
-console.log(`Prerendered ${routes.length} profile pages under dist/cocineras/ against ${origin}.`);
+console.log(`Prerendered ${routes.length} profile pages under dist/<slug>/ against ${origin}/cocineras/.`);

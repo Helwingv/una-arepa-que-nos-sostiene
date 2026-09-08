@@ -5,6 +5,8 @@ import { CookProfileView } from '@/components/cook-profile-view';
 import { useLanguage } from '@/components/language-provider';
 import { cooks, cooksBySlug, findCookBySlug } from '@/lib/cooks';
 
+const siteBasePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 function updateMeta(title: string, description: string, canonicalPath: string) {
   document.title = title;
   const descriptionMeta = document.querySelector<HTMLMetaElement>('meta[name="description"]');
@@ -19,8 +21,13 @@ function updateMeta(title: string, description: string, canonicalPath: string) {
 }
 
 export function App() {
-  const path = window.location.pathname.replace(/\/$/, '') || '/';
-  const match = path.match(/^\/cocineras\/([^/]+)$/);
+  const pathname = window.location.pathname.replace(/\/$/, '') || '/';
+  const path = pathname === siteBasePath
+    ? '/'
+    : pathname.startsWith(`${siteBasePath}/`)
+      ? pathname.slice(siteBasePath.length)
+      : pathname;
+  const match = path.match(/^\/([^/]+)$/);
   const profile = match ? findCookBySlug(decodeURIComponent(match[1])) : undefined;
 
   if (match && profile) return <ProfileRoute slug={profile.slug} />;
@@ -36,7 +43,7 @@ function Home() {
       language === 'es'
         ? 'Cocineras populares, territorio e identidad. Un archivo sonoro de 26 cocineras venezolanas.'
         : 'Traditional cooks, territory, and identity. A sound archive of 26 Venezuelan cooks.',
-      '/',
+      `${siteBasePath}/`,
     );
   }, [language, t.project]);
 
@@ -74,7 +81,7 @@ function ProfileRoute({ slug }: { slug: string }) {
     updateMeta(
       `${profile.name} · Una arepa que nos sostiene`,
       `${profile.name}, ${profile.location}. ${profile.dish[language]}.`,
-      `/cocineras/${profile.slug}/`,
+      `${siteBasePath}/${profile.slug}/`,
     );
   }, [language, profile]);
 
@@ -88,7 +95,7 @@ function NotFound() {
     <main className="not-found">
       <p className="eyebrow">404</p>
       <h1>{language === 'es' ? 'Esta historia no está aquí.' : 'This story is not here.'}</h1>
-      <a href="/">Volver a la colección / Back to the collection</a>
+      <a href={`${siteBasePath}/`}>Volver a la colección / Back to the collection</a>
     </main>
   );
 }

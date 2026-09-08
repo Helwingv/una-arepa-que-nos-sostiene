@@ -6,13 +6,15 @@ import { useLanguage } from './language-provider';
 import { Portrait } from './portrait';
 import { AudioPlayer } from './audio-player';
 
+const siteBasePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 export function CookProfileView({ profile, previous, next }: { profile: CookProfile; previous: CookProfile; next: CookProfile }) {
   const { language, t } = useLanguage();
 
   return (
     <main>
       <article className="profile-page">
-        <a href="/#coleccion" className="back-link"><ArrowLeft aria-hidden="true" />{t.back}</a>
+        <a href={`${siteBasePath}/#coleccion`} className="back-link"><ArrowLeft aria-hidden="true" />{t.back}</a>
         <div className="profile-hero">
           <div className="profile-portrait portrait-frame">
             <Portrait src={profile.media.imageUrl} alt={profile.name} priority />
@@ -46,10 +48,10 @@ export function CookProfileView({ profile, previous, next }: { profile: CookProf
         </section>
 
         <nav className="profile-nav" aria-label={`${t.previous} / ${t.next}`}>
-          <a href={`/cocineras/${previous.slug}/`}>
+          <a href={`${siteBasePath}/${previous.slug}/`}>
             <ArrowLeft aria-hidden="true" /><span><small>{t.previous}</small>{previous.name}</span>
           </a>
-          <a href={`/cocineras/${next.slug}/`}>
+          <a href={`${siteBasePath}/${next.slug}/`}>
             <span><small>{t.next}</small>{next.name}</span><ArrowRight aria-hidden="true" />
           </a>
         </nav>
