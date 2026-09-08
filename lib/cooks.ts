@@ -98,9 +98,9 @@ export const cooks: CookProfile[] = [
   cook('sonia-prieto', 'Sonia Prieto Guedez', 'Calabozo, Guárico', plains, 'cachapa con cochino frito', 'corn cachapa with fried pork'),
   cook('luz-castejon', 'Luz Castejón', 'Maracaibo, Zulia', zulia, 'bocachico relleno asado en hoja', 'leaf-roasted stuffed bocachico fish'),
   cook('anita-gonzalez-ipuana', 'Anita González Ipuana', 'Comunidad Wayuu, Zulia', zulia, 'ovejo guisado, frichi y arepitas de maíz', 'stewed mutton, frichi, and corn arepitas', { 
-    imageURL: 'https://talknexo.net/wp-content/uploads/2026/09/Anita-Gonzalez-Comunidad-Wayuu-scaled.jpg', 
-    biographyURL: 'https://talknexo.net/wp-content/uploads/2026/09/Anita-Wayuu-Presentacion-Final-Standarizada.wav', 
-    recipeURL: 'https://talknexo.net/wp-content/uploads/2026/09/Anita-Wayuu-Receta-Final-Standarizada.wav' 
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Anita-Gonzalez-Comunidad-Wayuu-scaled.jpg', 
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Anita-Wayuu-Presentacion-Final-Standarizada.wav', 
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Anita-Wayuu-Receta-Final-Standarizada.wav' 
   }),
 ];
 
