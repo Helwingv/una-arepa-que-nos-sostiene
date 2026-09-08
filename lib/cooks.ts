@@ -97,7 +97,11 @@ export const cooks: CookProfile[] = [
   cook('isolina-flores', 'Isolina Flores', 'Aragua de Barcelona, Anzoátegui', plains, 'cuajao de chigüire', 'capybara cuajao'),
   cook('sonia-prieto', 'Sonia Prieto Guedez', 'Calabozo, Guárico', plains, 'cachapa con cochino frito', 'corn cachapa with fried pork'),
   cook('luz-castejon', 'Luz Castejón', 'Maracaibo, Zulia', zulia, 'bocachico relleno asado en hoja', 'leaf-roasted stuffed bocachico fish'),
-  cook('anita-gonzalez-ipuana', 'Anita González Ipuana', 'Comunidad Wayuu, Zulia', zulia, 'ovejo guisado, frichi y arepitas de maíz', 'stewed mutton, frichi, and corn arepitas', { image: false, biographyAudio: false, recipeAudio: false }),
+  cook('anita-gonzalez-ipuana', 'Anita González Ipuana', 'Comunidad Wayuu, Zulia', zulia, 'ovejo guisado, frichi y arepitas de maíz', 'stewed mutton, frichi, and corn arepitas', { 
+    imageURL: 'https://talknexo.net/wp-content/uploads/2026/09/Anita-Gonzalez-Comunidad-Wayuu-scaled.jpg', 
+    biographyURL: 'https://talknexo.net/wp-content/uploads/2026/09/Anita-Wayuu-Presentacion-Final-Standarizada.wav', 
+    recipeURL: 'https://talknexo.net/wp-content/uploads/2026/09/Anita-Wayuu-Receta-Final-Standarizada.wav' 
+  }),
 ];
 
 export const cooksBySlug = Object.fromEntries(cooks.map((profile) => [profile.slug, profile])) as Record<string, CookProfile>;
