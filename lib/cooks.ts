@@ -74,7 +74,7 @@ export const cooks: CookProfile[] = [
   cook('marisol-quiroz', 'Marisol Quiroz', 'Patanemo, Carabobo', afro, 'pargo preñaó', 'stuffed red snapper'),
   cook('catalina-herrera', 'Catalina Herrera', 'Tucupita, Delta Amacuro', amazon, 'jukako (ajicero)', 'jukako (pepper stew)'),
   cook('elisa-padron', 'Elisa Padrón', 'Comunidad San Luis, Puerto Ayacucho', amazon, 'Ottoyanä deä: sivebi, lapa y bachacos', 'Ottoyanä deä with sivebi, paca, and leaf-cutter ants'),
-  cook('maria-auxiliadora-morales', 'María Auxiliadora Morales Barrera (Yiya)', 'La Mucuy Baja, Mérida', andes, 'manamana con ensalada de guineo y plátano verde', 'manamana fish with green banana and plantain salad'),
+  cook('maria-morales', 'María Auxiliadora Morales Barrera (Yiya)', 'La Mucuy Baja, Mérida', andes, 'manamana con ensalada de guineo y plátano verde', 'manamana fish with green banana and plantain salad'),
   cook('brigida-cardenas', 'Brígida Cárdenas', 'San Cristóbal, Táchira', andes, 'hervido de res', 'beef soup'),
   cook('ana-gisela-mora', 'Ana Gisela Mora', 'Trujillo', andes, 'mojo trujillano', 'Trujillo-style mojo', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Ana_Gisela_Mora_-Trujillo-scaled.jpg',
@@ -101,3 +101,13 @@ export const cooks: CookProfile[] = [
 ];
 
 export const cooksBySlug = Object.fromEntries(cooks.map((profile) => [profile.slug, profile])) as Record<string, CookProfile>;
+
+// Printed QR codes carry the short slug; the earlier one still resolves here.
+export const slugAliases: Record<string, string> = {
+  'maria-auxiliadora-morales': 'maria-morales',
+};
+
+export function findCookBySlug(slug: string): CookProfile | undefined {
+  const alias = slugAliases[slug];
+  return cooksBySlug[slug] ?? (alias ? cooksBySlug[alias] : undefined);
+}

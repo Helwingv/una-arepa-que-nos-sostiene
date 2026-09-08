@@ -3,7 +3,7 @@ import { ArrowDown } from 'lucide-react';
 import { CollectionGrid } from '@/components/collection-grid';
 import { CookProfileView } from '@/components/cook-profile-view';
 import { useLanguage } from '@/components/language-provider';
-import { cooks, cooksBySlug } from '@/lib/cooks';
+import { cooks, cooksBySlug, findCookBySlug } from '@/lib/cooks';
 
 function updateMeta(title: string, description: string, canonicalPath: string) {
   document.title = title;
@@ -21,7 +21,7 @@ function updateMeta(title: string, description: string, canonicalPath: string) {
 export function App() {
   const path = window.location.pathname.replace(/\/$/, '') || '/';
   const match = path.match(/^\/cocineras\/([^/]+)$/);
-  const profile = match ? cooksBySlug[decodeURIComponent(match[1])] : undefined;
+  const profile = match ? findCookBySlug(decodeURIComponent(match[1])) : undefined;
 
   if (match && profile) return <ProfileRoute slug={profile.slug} />;
   if (match) return <NotFound />;

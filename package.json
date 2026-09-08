@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node --experimental-strip-types scripts/prerender.mjs",
     "preview": "vite preview",
     "test": "node --experimental-strip-types scripts/validate-content.mjs",
     "lint": "oxlint src components/*.tsx lib scripts",
