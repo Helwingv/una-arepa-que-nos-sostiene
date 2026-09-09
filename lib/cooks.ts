@@ -126,7 +126,11 @@ export const cooks: CookProfile[] = [
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_28-dilia-fernandez-receta-final-standariza_el._consulado-studio.wav', 
   }),
   cook('julieta-fontainer', 'Julieta Fontainer', 'San Fernando de Apure, Apure', plains, 'pisillo de chigüire', 'shredded capybara'),
-  cook('isolina-flores', 'Isolina Flores', 'Aragua de Barcelona, Anzoátegui', plains, 'cuajao de chigüire', 'capybara cuajao'),
+  cook('isolina-flores', 'Isolina Flores', 'Aragua de Barcelona, Anzoátegui', plains, 'cuajao de chigüire', 'capybara cuajao', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Isolina-Flores-Aragua-de-Barcelona-scaled.jpg',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_46-isolina-aragua-de-barcelona-presentacio_el._consulado-studio.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_48-isolina-aragua-de-barcelona-receta-fina_el._consulado-studio.wav',
+  }),
   cook('sonia-prieto', 'Sonia Prieto Guedez', 'Calabozo, Guárico', plains, 'cachapa con cochino frito', 'corn cachapa with fried pork'),
   cook('luz-castejon', 'Luz Castejón', 'Maracaibo, Zulia', zulia, 'bocachico relleno asado en hoja', 'leaf-roasted stuffed bocachico fish'),
   cook('anita-gonzalez-ipuana', 'Anita González Ipuana', 'Comunidad Wayuu, Zulia', zulia, 'ovejo guisado, frichi y arepitas de maíz', 'stewed mutton, frichi, and corn arepitas', { 
