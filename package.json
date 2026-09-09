@@ -6,10 +6,10 @@
     "node": ">=22.13.0"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build && node --experimental-strip-types scripts/prerender.mjs",
+    "dev": "node --experimental-strip-types scripts/build-transcripts.mjs && vite",
+    "build": "node --experimental-strip-types scripts/build-transcripts.mjs && vite build && node --experimental-strip-types scripts/prerender.mjs",
     "preview": "vite preview",
-    "test": "node --experimental-strip-types scripts/validate-content.mjs",
+    "test": "node --experimental-strip-types scripts/build-transcripts.mjs && node --experimental-strip-types scripts/validate-content.mjs",
     "lint": "oxlint src components/*.tsx lib scripts",
     "format": "oxfmt"
   },

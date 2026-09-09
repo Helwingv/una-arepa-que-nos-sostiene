@@ -40,7 +40,7 @@ export function CookProfileView({ profile, previous, next }: { profile: CookProf
           </div>
           {profile.media.audio.length ? (
             <div className="audio-grid">
-              {profile.media.audio.map((track) => <AudioPlayer key={track.kind} track={track} name={profile.name} />)}
+              {profile.media.audio.map((track) => <AudioPlayer key={track.kind} track={track} slug={profile.slug} name={profile.name} />)}
             </div>
           ) : (
             <p className="empty-state">{t.audioUnavailable}</p>

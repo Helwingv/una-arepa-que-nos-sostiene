@@ -39,6 +39,10 @@ next-env.d.ts
 # Local source/preview media. Production media is served from WordPress.
 /public/media/
 
+# Built from content/transcripts/ by scripts/build-transcripts.mjs on dev, build and test.
+# lib/transcript-manifest.ts is generated too but stays tracked so a clean clone typechecks.
+/public/transcripts/
+
 # Unused local UI scaffold (not part of this site)
 /components/ui/
 /hooks/
