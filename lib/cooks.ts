@@ -95,7 +95,11 @@ export const cooks: CookProfile[] = [
   }),
   cook('lolimar-mijares', 'Lolimar Mijares', 'Caracas', central, 'pabellón caraqueño', 'Caracas-style pabellón'),
   cook('candelaria-pastora', 'Candelaria Pastora Misle de Torres (Pastorita)', 'Colonia Tovar, Aragua', central, 'pan prote', 'pan prote', { recipeAudio: false }),
-  cook('esperanza-rivera-guevara', 'Esperanza Rivera Guevara', 'San Joaquín, Carabobo', central, 'panelitas de San Joaquín', 'San Joaquín biscuits'),
+  cook('esperanza-rivera-guevara', 'Esperanza Rivera Guevara', 'San Joaquín, Carabobo', central, 'panelitas de San Joaquín', 'San Joaquín biscuits', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Esperanza-Rivera-San-Joaquinjpg-scaled.jpg',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_34-esperanza-guevara-san-joaquin-presentac_el._consulado-studio.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_36-esperanza-san-joaquin-receta-final-stan_el._consulado-studio.wav',
+  }),
   cook('maria-munoz', 'María Muñoz (Carmencita)', 'Valles del Tuy, Miranda', central, 'sancocho de bagre', 'catfish sancocho'),
   cook('maria-gabriela-castellanos', 'María Gabriela Castellanos', 'Barquisimeto, Lara', westCentral, 'pata e’ grillo, puré de caraotas y arepita de auyama', 'pata e’ grillo, black bean purée, and pumpkin-seed arepita'),
   cook('estela-escobar-santeliz', 'Estela Escobar Santeliz', 'San Felipe, Yaracuy', westCentral, 'ponche de San Juan', 'San Juan punch'),
