@@ -173,7 +173,9 @@ export const cooks: CookProfile[] = [
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Cosmelina-Paria-Presentacion-final-Standarizada.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Cosmelina-receta-final-Standarizada.wav', 
   }),
-  cook('karla-herrera-wulff', 'Karla Herrera Wulff', 'Ciudad Bolívar, Bolívar', guayana, 'pelao guayanés', 'Guayana-style pelao', { biographyAudio: false, recipeAudio: false }),
+  cook('karla-herrera-wulff', 'Karla Herrera Wulff', 'Ciudad Bolívar, Bolívar', guayana, 'pelao guayanés', 'Guayana-style pelao', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Karla-Herrera-Hoffman-ciudad-Bolivar-scaled.jpg',
+  }),
   cook('dilia-fernandez', 'Dilia Fernández', 'San Félix, Bolívar', guayana, 'receta por confirmar', 'recipe to be confirmed', { 
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Dilia-Fernandez-San-Felix-scaled.jpg', 
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_26-dilia-fernandez-presentacion-final-stan_el._consulado-studio.wav', 
