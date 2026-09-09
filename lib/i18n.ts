@@ -31,6 +31,10 @@ export const ui = {
     previous: 'Perfil anterior',
     next: 'Perfil siguiente',
     footer: 'Un archivo vivo de cocina, memoria y territorio venezolano.',
+    navigation: 'Navegación',
+    organization: 'Historia de la arepa',
+    downloadBook: 'Descargar el libro',
+    downloadBookSoon: 'La descarga del libro estará disponible pronto.',
     language: 'Idioma',
   },
   en: {
@@ -63,6 +67,10 @@ export const ui = {
     previous: 'Previous profile',
     next: 'Next profile',
     footer: 'A living archive of Venezuelan food, memory, and place.',
+    navigation: 'Navigation',
+    organization: 'Historia de la Arepa',
+    downloadBook: 'Download the book',
+    downloadBookSoon: 'The book download will be available soon.',
     language: 'Language',
   },
 } as const satisfies Record<Language, Record<string, string>>;

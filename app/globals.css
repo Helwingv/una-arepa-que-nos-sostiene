@@ -62,6 +62,7 @@ button, input, audio { font: inherit; }
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 24px;
   min-height: 72px;
   padding: 0 4vw;
   border-bottom: 1px solid var(--line);
@@ -73,7 +74,7 @@ button, input, audio { font: inherit; }
   display: inline-flex;
   align-items: center;
   gap: 14px;
-  max-width: 70%;
+  max-width: 46%;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.13em;
@@ -99,6 +100,40 @@ button, input, audio { font: inherit; }
   border-radius: 50%;
   background: var(--pink);
 }
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.site-nav a,
+.site-nav span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  color: var(--ink-soft);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  border-bottom-color: var(--pink);
+  color: var(--ink);
+}
+
+.site-nav [aria-disabled='true'] {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.site-nav svg { width: 14px; height: 14px; }
 
 .language-switcher {
   display: flex;
@@ -559,10 +594,12 @@ button, input, audio { font: inherit; }
 }
 
 @media (max-width: 660px) {
-  .site-header { min-height: 64px; padding: 0 20px; }
+  .site-header { flex-wrap: wrap; min-height: 0; padding: 12px 20px; gap: 12px 16px; }
+  .wordmark { max-width: calc(100% - 92px); }
+  .site-nav { order: 3; width: 100%; gap: 18px; font-size: 10px; letter-spacing: 0.08em; }
   .wordmark { font-size: 10px; letter-spacing: 0.08em; }
   .wordmark-mark { flex-basis: 21px; width: 21px; height: 21px; }
-  .hero { min-height: calc(100svh - 64px); padding: 5vh 20px; }
+  .hero { min-height: calc(100svh - 104px); padding: 5vh 20px; }
   .hero::before { inset: 22px; }
   .hero-copy { padding: 50px 22px 12px; }
   .hero h1 { font-size: clamp(2.65rem, 14vw, 5rem); line-height: 0.92; }
