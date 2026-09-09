@@ -11,6 +11,14 @@ export type AudioTrack = {
   url: string;
 };
 
+export type CookCredits = {
+  photography: string;
+  /** Absent when the source credits give no separate interviewer. */
+  interview?: string;
+  audio: string;
+  translation?: string;
+};
+
 export type CookProfile = {
   slug: string;
   name: string;
@@ -18,10 +26,17 @@ export type CookProfile = {
   region: LocalizedText;
   dish: LocalizedText;
   bio: LocalizedText;
+  credits: CookCredits;
   media: {
     imageUrl: string | null;
     audio: AudioTrack[];
   };
+};
+
+/** Credits for the digital project as a whole, shown in the site footer. */
+export const projectCredits = {
+  audioEditing: 'Roberto Bernal Daguis',
+  webDesign: 'Helwing Villamizar',
 };
 
 const region = (es: string, en: string): LocalizedText => ({ es, en });
@@ -51,6 +66,7 @@ const cook = (
   region: regionName,
   dish: { es: dishEs, en: dishEn },
   bio: bio(name, location, dishEs, dishEn),
+  credits: creditsBySlug[slug],
   media: {
     imageUrl: options.image === false ? null : options.imageUrl ?? `portraits/${slug}.jpg`,
     audio: audio(slug, options.biographyAudio !== false, options.recipeAudio !== false, options.biographyUrl, options.recipeUrl),
@@ -66,6 +82,36 @@ const coast = region('Zona costera', 'Coastal region');
 const guayana = region('Guayana', 'Guayana region');
 const plains = region('Zona llanera', 'Plains region');
 const zulia = region('Zona zuliana', 'Zulia region');
+
+/** Photography, interview, and recording credits, per the project's credit sheet. */
+const creditsBySlug: Record<string, CookCredits> = {
+  'yarenis-rosario': { photography: 'Saúl Torres', audio: 'Saúl Torres' },
+  'nereida-machado': { photography: 'Enrique Alberto Blanco Ibarra', interview: 'Enrique Alberto Blanco Ibarra', audio: 'Enrique Alberto Blanco Ibarra' },
+  'lucia-torrealba-london': { photography: 'Yris Infante Paul', interview: 'Lurernis Lezama', audio: 'Lurernis Lezama' },
+  'marisol-quiroz': { photography: 'Leonardo Rojas', interview: 'Luisa Beatriz Arreaza y Marisol Quiroz', audio: 'Luisa Beatriz Arreaza y Marisol Quiroz' },
+  'catalina-herrera': { photography: 'José Montiel', interview: 'Roxan Marín', audio: 'Roxan Marín' },
+  'elisa-padron': { photography: 'Gerardo Orozco', interview: 'Fathima del Amazonas', audio: 'Fathima del Amazonas' },
+  'maria-morales': { photography: 'Pablo Imperatori', interview: 'José Medina', audio: 'Pablo Imperatori' },
+  'brigida-cardenas': { photography: 'Israel Sayaverde', interview: 'Rafael Parada', audio: 'Israel Sayaverde' },
+  'ana-gisela-mora': { photography: 'Pablo Imperatori', interview: 'Pablo Imperatori', audio: 'Pablo Imperatori' },
+  'lolimar-mijares': { photography: 'Jimmy Villalta', interview: 'Rubén Darío Rojas', audio: 'Jimmy Villalta' },
+  'candelaria-pastora': { photography: 'Ysrael Paredes', interview: 'Katty Kanzler', audio: 'Ysrael Paredes' },
+  'esperanza-rivera-guevara': { photography: 'Enrique Alberto Blanco Ibarra', interview: 'Enrique Alberto Blanco Ibarra', audio: 'Enrique Alberto Blanco Ibarra' },
+  'maria-munoz': { photography: 'Jesús Moreno', interview: 'HM Direcciones', audio: 'HM Direcciones' },
+  'maria-gabriela-castellanos': { photography: 'Martha Machado Ducoing', interview: 'Juan Alonso Molina', audio: 'Martha Machado Ducoing' },
+  'estela-escobar-santeliz': { photography: 'Luis Manuel Sotillo Sanguino', interview: 'Andrés Fernando Rodríguez G.', audio: 'Luis Manuel Sotillo Sanguino' },
+  'isabel-marin': { photography: 'Leonardo Picó González', interview: 'Fernando Escorcia', audio: 'Leonardo Picó González' },
+  'josefina-pineda-pina': { photography: 'Leonardo Díaz', interview: 'Solangel Ventura', audio: 'Leonardo Díaz' },
+  'juana-bautista-marval': { photography: 'Manuel Tineo', interview: 'Ernesto Otahola', audio: 'Manuel Tineo' },
+  'cosmelina-sucre': { photography: 'Gerardo Orozco', interview: 'Jesús Enrique Méndez Guerrero', audio: 'Jesús Enrique Méndez Guerrero' },
+  'karla-herrera-wulff': { photography: 'Gustavo A. González', interview: 'Karla Herrera Wulff', audio: 'Karla Herrera Wulff' },
+  'dilia-fernandez': { photography: 'Ender García', interview: 'Ender García', audio: 'Ender García' },
+  'julieta-fontainer': { photography: 'Franco José Requena', interview: 'Sorelia Franco', audio: 'Franco José Requena y María Regina Ascanio Mendoza' },
+  'isolina-flores': { photography: 'Samir Aponte', interview: 'Luisa Beatriz Arreaza', audio: 'Samir Aponte' },
+  'sonia-prieto': { photography: 'Yanelis Chacón Jiménez', interview: 'Sorelia Franco', audio: 'Franco José Requena y María Regina Ascanio Mendoza' },
+  'luz-castejon': { photography: 'Juan J. Hurtado S.', interview: 'Mary Tere Pérez', audio: 'Mary Tere Pérez' },
+  'anita-gonzalez-ipuana': { photography: 'Ramón Castillo', interview: 'Rina Navarro Montiel', audio: 'Rina Navarro Montiel', translation: 'Leobadis Gonzales' },
+};
 
 export const cooks: CookProfile[] = [
   cook('yarenis-rosario', 'Yarenis Rosario', 'Catia La Mar, La Guaira', coast, 'fosforera', 'fosforera seafood soup', { biographyAudio: false, recipeAudio: false }),

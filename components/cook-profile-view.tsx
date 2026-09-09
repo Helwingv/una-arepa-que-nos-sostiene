@@ -5,6 +5,7 @@ import type { CookProfile } from '@/lib/cooks';
 import { useLanguage } from './language-provider';
 import { Portrait } from './portrait';
 import { AudioPlayer } from './audio-player';
+import { CookCreditsSection } from './cook-credits';
 
 const siteBasePath = import.meta.env.BASE_URL.replace(/\/$/, '');
 
@@ -46,6 +47,8 @@ export function CookProfileView({ profile, previous, next }: { profile: CookProf
             <p className="empty-state">{t.audioUnavailable}</p>
           )}
         </section>
+
+        <CookCreditsSection credits={profile.credits} />
 
         <nav className="profile-nav" aria-label={`${t.previous} / ${t.next}`}>
           <a href={`${siteBasePath}/${previous.slug}/`}>
