@@ -116,7 +116,11 @@ const creditsBySlug: Record<string, CookCredits> = {
 export const cooks: CookProfile[] = [
   cook('yarenis-rosario', 'Yarenis Rosario', 'Catia La Mar, La Guaira', coast, 'fosforera', 'fosforera seafood soup', { biographyAudio: false, recipeAudio: false }),
   cook('nereida-machado', 'Nereida Machado', 'El Clavo, Barlovento', afro, 'cafunga', 'cafunga, a plantain and coconut sweet'),
-  cook('lucia-torrealba-london', 'Madama Lucía Torrealba London', 'El Callao, Bolívar', afro, 'banana pie y tarkarí', 'banana pie and tarkarí'),
+  cook('lucia-torrealba-london', 'Madama Lucía Torrealba London', 'El Callao, Bolívar', afro, 'banana pie y tarkarí', 'banana pie and tarkarí', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Lucia_Torrealba-El-callaojpg-scaled.jpg',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_67-lucia-torrealba-london-presentacion-sta_el._consulado-studio.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_69-lucia-torrealba-london-receta-standariz_el._consulado-studio.wav',
+  }),
   cook('marisol-quiroz', 'Marisol Quiroz', 'Patanemo, Carabobo', afro, 'pargo preñaó', 'stuffed red snapper'),
   cook('catalina-herrera', 'Catalina Herrera', 'Tucupita, Delta Amacuro', amazon, 'jukako (ajicero)', 'jukako (pepper stew)', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Carolina-Herrera-Delta-1-scaled.jpg',
