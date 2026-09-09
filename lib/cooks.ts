@@ -107,7 +107,11 @@ export const cooks: CookProfile[] = [
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_38-estela-escobar-presentacion-standarizada_el._consulado-studio.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_40-estela-receta-fina-stadarizadal_el._consulado-studio.wav',
   }),
-  cook('isabel-marin', 'Isabel Marín (La Negra)', 'Boca de Río, Nueva Esparta', coast, 'pescado oreado y sus preparaciones', 'air-dried fish and related preparations'),
+  cook('isabel-marin', 'Isabel Marín (La Negra)', 'Boca de Río, Nueva Esparta', coast, 'pescado oreado y sus preparaciones', 'air-dried fish and related preparations', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Isabel-Marin-Boca-de-Rio-scaled.jpg',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_42-isabel-marin-presentacion-nueva-esparta_el._consulado-studio.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_44-isabel-marin-receta-nueva-esparta-final_el._consulado-studio.wav',
+  }),
   cook('josefina-pineda-pina', 'Josefina Pineda Piña (Chepina)', 'Coro, Falcón', coast, 'escabeche de carite', 'kingfish escabeche'),
   cook('juana-bautista-marval', 'Juana Bautista Marval', 'Cumaná, Sucre', coast, 'cóctel de camarones', 'shrimp cocktail'),
   cook('cosmelina-sucre', 'Cosmelina Sucre (Cosme)', 'Río Caribe, Paria', coast, 'coguyón oreado con camarones', 'air-dried coguyón fish with shrimp', {
