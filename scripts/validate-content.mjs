@@ -48,7 +48,7 @@ const checks = [
   [cooks.length === 26, `expected 26 profiles, found ${cooks.length}`],
   [new Set(slugs).size === slugs.length, 'profile slugs must be unique'],
   [slugs.every((slug) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)), 'profile slugs must be URL-safe'],
-  [audioTracks.length === 49, `expected 49 mapped audio tracks, found ${audioTracks.length}`],
+  [audioTracks.length === 47, `expected 47 mapped audio tracks, found ${audioTracks.length}`],
   [portraitSources.length === 26, `expected 26 portrait sources, found ${portraitSources.length}`],
   [unreachable.length === 0, `printed QR slugs with no profile: ${unreachable.join(', ')}`],
   [orphanTranscripts.length === 0, `transcripts with no profile: ${orphanTranscripts.join(', ')}`],
@@ -62,4 +62,4 @@ if (failures.length) {
 }
 
 const transcriptCount = transcriptSlugs.reduce((total, slug) => total + transcriptManifest[slug].length, 0);
-console.log(`Validated 26 profiles, 49 audio mappings, 26 portrait sources, ${transcriptCount} transcripts, stable unique slugs, and 26 printed QR URLs.`);
+console.log(`Validated 26 profiles, 47 audio mappings, 26 portrait sources, ${transcriptCount} transcripts, stable unique slugs, and 26 printed QR URLs.`);

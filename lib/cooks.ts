@@ -183,6 +183,8 @@ export const cooks: CookProfile[] = [
   }),
   cook('karla-herrera-wulff', 'Karla Herrera Wulff', 'Ciudad Bolívar, Bolívar', guayana, 'pelao guayanés', 'Guayana-style pelao', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Karla-Herrera-Hoffman-ciudad-Bolivar-scaled.jpg',
+    biographyAudio: false,
+    recipeAudio: false,
   }),
   cook('dilia-fernandez', 'Dilia Fernández', 'San Félix, Bolívar', guayana, 'receta por confirmar', 'recipe to be confirmed', { 
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Dilia-Fernandez-San-Felix-scaled.jpg', 
