@@ -163,7 +163,11 @@ export const cooks: CookProfile[] = [
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_50-josefina-chepina-coro-presentacion-stan_el._consulado-studio.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_52-josefina-chepina-coro-receta-standariza_el._consulado-studio.wav',
   }),
-  cook('juana-bautista-marval', 'Juana Bautista Marval', 'Cumaná, Sucre', coast, 'cóctel de camarones', 'shrimp cocktail'),
+  cook('juana-bautista-marval', 'Juana Bautista Marval', 'Cumaná, Sucre', coast, 'cóctel de camarones', 'shrimp cocktail', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Juana-Marval-Cumana-scaled.jpg',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_55-juana-cumana-presentacion-final-standar_el._consulado-studio.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_57-juana-cumana-receta-final-standarizada_el._consulado-studio.wav',
+  }),
   cook('cosmelina-sucre', 'Cosmelina Sucre (Cosme)', 'Río Caribe, Paria', coast, 'coguyón oreado con camarones', 'air-dried coguyón fish with shrimp', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Cosmelina-Sucre-Paria-scaled.jpg',
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Cosmelina-Paria-Presentacion-final-Standarizada.wav',
