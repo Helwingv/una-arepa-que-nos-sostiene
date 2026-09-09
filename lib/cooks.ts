@@ -139,7 +139,11 @@ export const cooks: CookProfile[] = [
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/ana-Gisela-Mora-Presentacion-Standarizada.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Ana-Gisela-Mora-Receta-Final-Standarizada.wav',
   }),
-  cook('lolimar-mijares', 'Lolimar Mijares', 'Caracas', central, 'pabellón caraqueño', 'Caracas-style pabellón'),
+  cook('lolimar-mijares', 'Lolimar Mijares', 'Caracas', central, 'pabellón caraqueño', 'Caracas-style pabellón', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Lolimar-Mijares_-Caracas-scaled.jpg',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_63-lolimar-mijares-presentacion-standariza_el._consulado-studio.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_65-lolimar-mijares-receta-standarizada_el._consulado-studio.wav',
+  }),
   cook('candelaria-pastora', 'Candelaria Pastora Misle de Torres (Pastorita)', 'Colonia Tovar, Aragua', central, 'pan prote', 'pan prote', { recipeAudio: false }),
   cook('esperanza-rivera-guevara', 'Esperanza Rivera Guevara', 'San Joaquín, Carabobo', central, 'panelitas de San Joaquín', 'San Joaquín biscuits', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Esperanza-Rivera-San-Joaquinjpg-scaled.jpg',
