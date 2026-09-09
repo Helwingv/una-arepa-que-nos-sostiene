@@ -75,11 +75,15 @@ export const cooks: CookProfile[] = [
   cook('catalina-herrera', 'Catalina Herrera', 'Tucupita, Delta Amacuro', amazon, 'jukako (ajicero)', 'jukako (pepper stew)'),
   cook('elisa-padron', 'Elisa Padrón', 'Comunidad San Luis, Puerto Ayacucho', amazon, 'Ottoyanä deä: sivebi, lapa y bachacos', 'Ottoyanä deä with sivebi, paca, and leaf-cutter ants'),
   cook('maria-morales', 'María Auxiliadora Morales Barrera (Yiya)', 'La Mucuy Baja, Mérida', andes, 'manamana con ensalada de guineo y plátano verde', 'manamana fish with green banana and plantain salad'),
-  cook('brigida-cardenas', 'Brígida Cárdenas', 'San Cristóbal, Táchira', andes, 'hervido de res', 'beef soup'),
+  cook('brigida-cardenas', 'Brígida Cárdenas', 'San Cristóbal, Táchira', andes, 'hervido de res', 'beef soup', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Brigida-Cardenas-San-Cristobal-1.jpg',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Brigida-Cardenas-Presentacion-Final-standarizada.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Brigida-Cardenas-Receta-Final-Standarizada.wav',
+  }),
   cook('ana-gisela-mora', 'Ana Gisela Mora', 'Trujillo', andes, 'mojo trujillano', 'Trujillo-style mojo', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Ana_Gisela_Mora_-Trujillo-scaled.jpg',
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/ana-Gisela-Mora-Presentacion-Standarizada.wav',
-    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Ana-gisela-Mora-receta-mojo-trujillo-standarizada.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Brigida-Cardenas-Receta-Final-Standarizada.wav',
   }),
   cook('lolimar-mijares', 'Lolimar Mijares', 'Caracas', central, 'pabellón caraqueño', 'Caracas-style pabellón'),
   cook('candelaria-pastora', 'Candelaria Pastora Misle de Torres (Pastorita)', 'Colonia Tovar, Aragua', central, 'pan prote', 'pan prote', { recipeAudio: false }),
