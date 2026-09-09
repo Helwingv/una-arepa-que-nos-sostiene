@@ -77,7 +77,11 @@ export const cooks: CookProfile[] = [
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_22-catalina-herrera-amazonica-presentacion_el._consulado-studio.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_24-catalina-herrera-receta-standarizada_el._consulado-studio.wav',
   }),
-  cook('elisa-padron', 'Elisa Padrón', 'Comunidad San Luis, Puerto Ayacucho', amazon, 'Ottoyanä deä: sivebi, lapa y bachacos', 'Ottoyanä deä with sivebi, paca, and leaf-cutter ants'),
+  cook('elisa-padron', 'Elisa Padrón', 'Comunidad San Luis, Puerto Ayacucho', amazon, 'Ottoyanä deä: sivebi, lapa y bachacos', 'Ottoyanä deä with sivebi, paca, and leaf-cutter ants', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Elisa-Padron-San-Luis-Puerto-Ayacucho.JPEG-scaled.jpg',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_30-elisa-padron-presentacion-standarizada_el._consulado-studio.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_32-elisa-padron-receta-standarizada_el._consulado-studio.wav',
+  }),
   cook('maria-morales', 'María Auxiliadora Morales Barrera (Yiya)', 'La Mucuy Baja, Mérida', andes, 'manamana con ensalada de guineo y plátano verde', 'manamana fish with green banana and plantain salad'),
   cook('brigida-cardenas', 'Brígida Cárdenas', 'San Cristóbal, Táchira', andes, 'hervido de res', 'beef soup', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Brigida-Cardenas-San-Cristobal-1.jpg',
