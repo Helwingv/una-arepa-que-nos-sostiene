@@ -102,7 +102,11 @@ export const cooks: CookProfile[] = [
   }),
   cook('maria-munoz', 'María Muñoz (Carmencita)', 'Valles del Tuy, Miranda', central, 'sancocho de bagre', 'catfish sancocho'),
   cook('maria-gabriela-castellanos', 'María Gabriela Castellanos', 'Barquisimeto, Lara', westCentral, 'pata e’ grillo, puré de caraotas y arepita de auyama', 'pata e’ grillo, black bean purée, and pumpkin-seed arepita'),
-  cook('estela-escobar-santeliz', 'Estela Escobar Santeliz', 'San Felipe, Yaracuy', westCentral, 'ponche de San Juan', 'San Juan punch'),
+  cook('estela-escobar-santeliz', 'Estela Escobar Santeliz', 'San Felipe, Yaracuy', westCentral, 'ponche de San Juan', 'San Juan punch', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Estela-Escobar-Yaracuy-scaled.jpg',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_38-estela-escobar-presentacion-standarizada_el._consulado-studio.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_40-estela-receta-fina-stadarizadal_el._consulado-studio.wav',
+  }),
   cook('isabel-marin', 'Isabel Marín (La Negra)', 'Boca de Río, Nueva Esparta', coast, 'pescado oreado y sus preparaciones', 'air-dried fish and related preparations'),
   cook('josefina-pineda-pina', 'Josefina Pineda Piña (Chepina)', 'Coro, Falcón', coast, 'escabeche de carite', 'kingfish escabeche'),
   cook('juana-bautista-marval', 'Juana Bautista Marval', 'Cumaná, Sucre', coast, 'cóctel de camarones', 'shrimp cocktail'),
