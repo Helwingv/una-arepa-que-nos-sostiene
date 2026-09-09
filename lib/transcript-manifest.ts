@@ -37,6 +37,22 @@ export const transcriptManifest: Record<string, AudioTrack['kind'][]> = {
   "josefina-pineda-pina": [
     "biography",
     "recipe"
+  ],
+  "juana-bautista-marval": [
+    "biography",
+    "recipe"
+  ],
+  "julieta-fontainer": [
+    "biography",
+    "recipe"
+  ],
+  "lolimar-mijares": [
+    "biography",
+    "recipe"
+  ],
+  "lucia-torrealba-london": [
+    "biography",
+    "recipe"
   ]
 };
 
