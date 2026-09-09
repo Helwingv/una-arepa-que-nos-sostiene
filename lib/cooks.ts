@@ -72,13 +72,17 @@ export const cooks: CookProfile[] = [
   cook('nereida-machado', 'Nereida Machado', 'El Clavo, Barlovento', afro, 'cafunga', 'cafunga, a plantain and coconut sweet'),
   cook('lucia-torrealba-london', 'Madama Lucía Torrealba London', 'El Callao, Bolívar', afro, 'banana pie y tarkarí', 'banana pie and tarkarí'),
   cook('marisol-quiroz', 'Marisol Quiroz', 'Patanemo, Carabobo', afro, 'pargo preñaó', 'stuffed red snapper'),
-  cook('catalina-herrera', 'Catalina Herrera', 'Tucupita, Delta Amacuro', amazon, 'jukako (ajicero)', 'jukako (pepper stew)'),
+  cook('catalina-herrera', 'Catalina Herrera', 'Tucupita, Delta Amacuro', amazon, 'jukako (ajicero)', 'jukako (pepper stew)', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Carolina-Herrera-Delta-1-scaled.jpg',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Catalina-Tucupita-Presentacion-Final-Standarizada.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Catalina-Tucupita-Receta-Final-Standarizada.wav',
+  }),
   cook('elisa-padron', 'Elisa Padrón', 'Comunidad San Luis, Puerto Ayacucho', amazon, 'Ottoyanä deä: sivebi, lapa y bachacos', 'Ottoyanä deä with sivebi, paca, and leaf-cutter ants'),
   cook('maria-morales', 'María Auxiliadora Morales Barrera (Yiya)', 'La Mucuy Baja, Mérida', andes, 'manamana con ensalada de guineo y plátano verde', 'manamana fish with green banana and plantain salad'),
   cook('brigida-cardenas', 'Brígida Cárdenas', 'San Cristóbal, Táchira', andes, 'hervido de res', 'beef soup', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Brigida-Cardenas-San-Cristobal-1.jpg',
-    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Brigida-Cardenas-Presentacion-Final-standarizada.wav',
-    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Brigida-Cardenas-Receta-Final-Standarizada.wav',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_22-catalina-herrera-amazonica-presentacion_el._consulado-studio.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_24-catalina-herrera-receta-standarizada_el._consulado-studio.wav',
   }),
   cook('ana-gisela-mora', 'Ana Gisela Mora', 'Trujillo', andes, 'mojo trujillano', 'Trujillo-style mojo', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Ana_Gisela_Mora_-Trujillo-scaled.jpg',
