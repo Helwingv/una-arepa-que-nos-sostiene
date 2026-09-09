@@ -179,7 +179,11 @@ export const cooks: CookProfile[] = [
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_26-dilia-fernandez-presentacion-final-stan_el._consulado-studio.wav', 
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_28-dilia-fernandez-receta-final-standariza_el._consulado-studio.wav', 
   }),
-  cook('julieta-fontainer', 'Julieta Fontainer', 'San Fernando de Apure, Apure', plains, 'pisillo de chigüire', 'shredded capybara'),
+  cook('julieta-fontainer', 'Julieta Fontainer', 'San Fernando de Apure, Apure', plains, 'pisillo de chigüire', 'shredded capybara', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Juleita-Fontainez-Apure-scaled.jpg',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_61-fontainez-presentacion-standarizada_el._consulado-studio.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_59-julieta-fontainez-receta-standarizada_el._consulado-studio.wav',
+  }),
   cook('isolina-flores', 'Isolina Flores', 'Aragua de Barcelona, Anzoátegui', plains, 'cuajao de chigüire', 'capybara cuajao', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Isolina-Flores-Aragua-de-Barcelona-scaled.jpg',
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_46-isolina-aragua-de-barcelona-presentacio_el._consulado-studio.wav',
