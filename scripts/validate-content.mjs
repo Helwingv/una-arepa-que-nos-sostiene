@@ -48,7 +48,7 @@ const checks = [
   [cooks.length === 26, `expected 26 profiles, found ${cooks.length}`],
   [new Set(slugs).size === slugs.length, 'profile slugs must be unique'],
   [slugs.every((slug) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)), 'profile slugs must be URL-safe'],
-  [audioTracks.length === 50, `expected 50 mapped audio tracks, found ${audioTracks.length}`],
+  [audioTracks.length === 52, `expected 52 mapped audio tracks, found ${audioTracks.length}`],
   [portraitSources.length === 26, `expected 26 portrait sources, found ${portraitSources.length}`],
   [unreachable.length === 0, `printed QR slugs with no profile: ${unreachable.join(', ')}`],
   [orphanTranscripts.length === 0, `transcripts with no profile: ${orphanTranscripts.join(', ')}`],

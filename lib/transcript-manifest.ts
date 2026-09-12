@@ -58,6 +58,10 @@ export const transcriptManifest: Record<string, AudioTrack['kind'][]> = {
     "biography",
     "recipe"
   ],
+  "karla-herrera-wulff": [
+    "biography",
+    "recipe"
+  ],
   "lolimar-mijares": [
     "biography",
     "recipe"
