@@ -2,6 +2,10 @@
 import type { AudioTrack } from './cooks';
 
 export const transcriptManifest: Record<string, AudioTrack['kind'][]> = {
+  "candelaria-pastora": [
+    "biography",
+    "recipe"
+  ],
   "catalina-herrera": [
     "biography",
     "recipe"
@@ -51,6 +55,38 @@ export const transcriptManifest: Record<string, AudioTrack['kind'][]> = {
     "recipe"
   ],
   "lucia-torrealba-london": [
+    "biography",
+    "recipe"
+  ],
+  "luz-castejon": [
+    "biography",
+    "recipe"
+  ],
+  "maria-gabriela-castellanos": [
+    "biography",
+    "recipe"
+  ],
+  "maria-morales": [
+    "biography",
+    "recipe"
+  ],
+  "maria-munoz": [
+    "biography",
+    "recipe"
+  ],
+  "marisol-quiroz": [
+    "biography",
+    "recipe"
+  ],
+  "nereida-machado": [
+    "biography",
+    "recipe"
+  ],
+  "sonia-prieto": [
+    "biography",
+    "recipe"
+  ],
+  "yarenis-rosario": [
     "biography",
     "recipe"
   ]
