@@ -160,7 +160,11 @@ export const cooks: CookProfile[] = [
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_63-lolimar-mijares-presentacion-standariza_el._consulado-studio.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_65-lolimar-mijares-receta-standarizada_el._consulado-studio.wav',
   }),
-  cook('candelaria-pastora', 'Candelaria Pastora Misle de Torres (Pastorita)', 'Colonia Tovar, Aragua', central, 'pan prote', 'pan prote', { recipeAudio: false }),
+  cook('candelaria-pastora', 'Candelaria Pastora Misle de Torres (Pastorita)', 'Colonia Tovar, Aragua', central, 'pan prote', 'pan prote', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Candelaria-Pastora-Colonia-Tovar-scaled.jpg',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_75-candelaria-pastora-presentacion-standar_el._consulado-studio.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_77-candelaria-pastora-receta-standarizada_el._consulado-studio.wav',
+  }),
   cook('esperanza-rivera-guevara', 'Esperanza Rivera Guevara', 'San Joaquín, Carabobo', central, 'panelitas de San Joaquín', 'San Joaquín biscuits', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Esperanza-Rivera-San-Joaquinjpg-scaled.jpg',
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_34-esperanza-guevara-san-joaquin-presentac_el._consulado-studio.wav',
