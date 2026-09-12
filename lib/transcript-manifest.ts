@@ -2,6 +2,14 @@
 import type { AudioTrack } from './cooks';
 
 export const transcriptManifest: Record<string, AudioTrack['kind'][]> = {
+  "ana-gisela-mora": [
+    "biography",
+    "recipe"
+  ],
+  "brigida-cardenas": [
+    "biography",
+    "recipe"
+  ],
   "candelaria-pastora": [
     "biography",
     "recipe"
