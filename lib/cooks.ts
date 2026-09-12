@@ -225,7 +225,11 @@ export const cooks: CookProfile[] = [
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_46-isolina-aragua-de-barcelona-presentacio_el._consulado-studio.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_48-isolina-aragua-de-barcelona-receta-fina_el._consulado-studio.wav',
   }),
-  cook('sonia-prieto', 'Sonia Prieto Guedez', 'Calabozo, Guárico', plains, 'cachapa con cochino frito', 'corn cachapa with fried pork'),
+  cook('sonia-prieto', 'Sonia Prieto Guedez', 'Calabozo, Guárico', plains, 'cachapa con cochino frito', 'corn cachapa with fried pork', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Sonia-Prieto-Guedez-Guarico_-scaled.jpg',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_97-sonia-prieto-guarico-presentacion-final_el._consulado-studio.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_99-copia-de-sonia-prieto-receta-final-stan_el._consulado-studio.wav',
+  }),
   cook('luz-castejon', 'Luz Castejón', 'Maracaibo, Zulia', zulia, 'bocachico relleno asado en hoja', 'leaf-roasted stuffed bocachico fish', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Luz-Castejon-Maracaibo-scaled.jpg',
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_71-luz-castejon-presentacion-standarizada_el._consulado-studio.wav',
