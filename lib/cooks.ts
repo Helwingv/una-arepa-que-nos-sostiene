@@ -121,7 +121,11 @@ export const cooks: CookProfile[] = [
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_67-lucia-torrealba-london-presentacion-sta_el._consulado-studio.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_69-lucia-torrealba-london-receta-standariz_el._consulado-studio.wav',
   }),
-  cook('marisol-quiroz', 'Marisol Quiroz', 'Patanemo, Carabobo', afro, 'pargo preñaó', 'stuffed red snapper'),
+  cook('marisol-quiroz', 'Marisol Quiroz', 'Patanemo, Carabobo', afro, 'pargo preñaó', 'stuffed red snapper', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Marisol-Quiroz-Patanemo-scaled.jpg',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_85-copia-de-marisol-quiroz-presentacion-fi_el._consulado-studio.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_87-copia-de-marisol-quiroz-receta-final-st_el._consulado-studio.wav',
+  }),
   cook('catalina-herrera', 'Catalina Herrera', 'Tucupita, Delta Amacuro', amazon, 'jukako (ajicero)', 'jukako (pepper stew)', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Carolina-Herrera-Delta-1-scaled.jpg',
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_22-catalina-herrera-amazonica-presentacion_el._consulado-studio.wav',
