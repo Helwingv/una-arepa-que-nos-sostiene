@@ -158,7 +158,11 @@ export const cooks: CookProfile[] = [
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_34-esperanza-guevara-san-joaquin-presentac_el._consulado-studio.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_36-esperanza-san-joaquin-receta-final-stan_el._consulado-studio.wav',
   }),
-  cook('maria-munoz', 'María Muñoz (Carmencita)', 'Valles del Tuy, Miranda', central, 'sancocho de bagre', 'catfish sancocho'),
+  cook('maria-munoz', 'María Muñoz (Carmencita)', 'Valles del Tuy, Miranda', central, 'sancocho de bagre', 'catfish sancocho', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Carmencita-Valles-del-tuy.png',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_81-carmencita-presentacion-standarizada_el._consulado-studio.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_83-carmencita-receta-standarizada_el._consulado-studio.wav',
+  }),
   cook('maria-gabriela-castellanos', 'María Gabriela Castellanos', 'Barquisimeto, Lara', westCentral, 'pata e’ grillo, puré de caraotas y arepita de auyama', 'pata e’ grillo, black bean purée, and pumpkin-seed arepita', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Maria-Gabriela-Castellano_Lara.jpg',
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/MG-Castellanos-Presentacion-final-Standarizada.wav',
