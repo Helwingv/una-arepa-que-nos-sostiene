@@ -114,7 +114,11 @@ const creditsBySlug: Record<string, CookCredits> = {
 };
 
 export const cooks: CookProfile[] = [
-  cook('yarenis-rosario', 'Yarenis Rosario', 'Catia La Mar, La Guaira', coast, 'fosforera', 'fosforera seafood soup', { biographyAudio: false, recipeAudio: false }),
+  cook('yarenis-rosario', 'Yarenis Rosario', 'Catia La Mar, La Guaira', coast, 'fosforera', 'fosforera seafood soup', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Yerenis-Rosario-Catia-la-Mar-scaled.jpeg',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_101-yaremis-la-guaira-montaje_el._consulado-studio.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_103-yaremis-la-guaira-receta-montaje_el._consulado-studio.wav',
+  }),
   cook('nereida-machado', 'Nereida Machado', 'El Clavo, Barlovento', afro, 'cafunga', 'cafunga, a plantain and coconut sweet', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Nerida-Machado-Barlovento-el-clavo-scaled.jpg',
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_89-nereida-martinez-presentacion-standari_el._consulado-studio.wav',
