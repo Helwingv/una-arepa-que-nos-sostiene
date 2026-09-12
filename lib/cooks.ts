@@ -132,7 +132,11 @@ export const cooks: CookProfile[] = [
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_30-elisa-padron-presentacion-standarizada_el._consulado-studio.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_32-elisa-padron-receta-standarizada_el._consulado-studio.wav',
   }),
-  cook('maria-morales', 'María Auxiliadora Morales Barrera (Yiya)', 'La Mucuy Baja, Mérida', andes, 'manamana con ensalada de guineo y plátano verde', 'manamana fish with green banana and plantain salad'),
+  cook('maria-morales', 'María Auxiliadora Morales Barrera (Yiya)', 'La Mucuy Baja, Mérida', andes, 'manamana con ensalada de guineo y plátano verde', 'manamana fish with green banana and plantain salad', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Maria_Auxiliadora_Morales_RETRATO_-Merida-Yiya-scaled.jpg',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_77-copia-de-yiya-presentacion-standarizada_el._consulado-studio.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_79-copia-de-yiya-receta-final-standarizada_el._consulado-studio.wav',
+  }),
   cook('brigida-cardenas', 'Brígida Cárdenas', 'San Cristóbal, Táchira', andes, 'hervido de res', 'beef soup', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Brigida-Cardenas-San-Cristobal-1.jpg',
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Brigida-Cardenas-Presentacion-Final-standarizada.wav',
@@ -155,7 +159,11 @@ export const cooks: CookProfile[] = [
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_36-esperanza-san-joaquin-receta-final-stan_el._consulado-studio.wav',
   }),
   cook('maria-munoz', 'María Muñoz (Carmencita)', 'Valles del Tuy, Miranda', central, 'sancocho de bagre', 'catfish sancocho'),
-  cook('maria-gabriela-castellanos', 'María Gabriela Castellanos', 'Barquisimeto, Lara', westCentral, 'pata e’ grillo, puré de caraotas y arepita de auyama', 'pata e’ grillo, black bean purée, and pumpkin-seed arepita'),
+  cook('maria-gabriela-castellanos', 'María Gabriela Castellanos', 'Barquisimeto, Lara', westCentral, 'pata e’ grillo, puré de caraotas y arepita de auyama', 'pata e’ grillo, black bean purée, and pumpkin-seed arepita', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Maria-Gabriela-Castellano_Lara.jpg',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/MG-Castellanos-Presentacion-final-Standarizada.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/MG-Castellanos-Receta-final-standarizada.wav',
+  }),
   cook('estela-escobar-santeliz', 'Estela Escobar Santeliz', 'San Felipe, Yaracuy', westCentral, 'ponche de San Juan', 'San Juan punch', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Estela-Escobar-Yaracuy-scaled.jpg',
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_38-estela-escobar-presentacion-standarizada_el._consulado-studio.wav',
@@ -202,7 +210,11 @@ export const cooks: CookProfile[] = [
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_48-isolina-aragua-de-barcelona-receta-fina_el._consulado-studio.wav',
   }),
   cook('sonia-prieto', 'Sonia Prieto Guedez', 'Calabozo, Guárico', plains, 'cachapa con cochino frito', 'corn cachapa with fried pork'),
-  cook('luz-castejon', 'Luz Castejón', 'Maracaibo, Zulia', zulia, 'bocachico relleno asado en hoja', 'leaf-roasted stuffed bocachico fish'),
+  cook('luz-castejon', 'Luz Castejón', 'Maracaibo, Zulia', zulia, 'bocachico relleno asado en hoja', 'leaf-roasted stuffed bocachico fish', {
+    imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Luz-Castejon-Maracaibo-scaled.jpg',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_71-luz-castejon-presentacion-standarizada_el._consulado-studio.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_73-luz-castejon-receta-standarizada_el._consulado-studio.wav',
+  }),
   cook('anita-gonzalez-ipuana', 'Anita González Ipuana', 'Comunidad Wayuu, Zulia', zulia, 'ovejo guisado, frichi y arepitas de maíz', 'stewed mutton, frichi, and corn arepitas', { 
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Anita-Gonzalez-Comunidad-Wayuu-scaled.jpg', 
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Anita-Wayuu-Presentacion-Final-Standarizada.wav', 
