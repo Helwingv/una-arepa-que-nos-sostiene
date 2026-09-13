@@ -9,7 +9,7 @@ import { useLanguage } from './language-provider';
 import { TranscriptModal } from './transcript-modal';
 
 export function AudioPlayer({ track, slug, name }: { track: AudioTrack; slug: string; name: string }) {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
   const [failed, setFailed] = useState(false);
   const [transcriptOpen, setTranscriptOpen] = useState(false);
   const src = resolveMediaUrl(track.url);
@@ -37,7 +37,7 @@ export function AudioPlayer({ track, slug, name }: { track: AudioTrack; slug: st
           {t.audioUnavailable}
         </audio>
       )}
-      {hasTranscript(slug, track.kind) && (
+      {hasTranscript(slug, track.kind, language) && (
         <button type="button" className="transcript-trigger" onClick={() => setTranscriptOpen(true)}>
           <FileText aria-hidden="true" />
           <span>{t.transcript}</span>

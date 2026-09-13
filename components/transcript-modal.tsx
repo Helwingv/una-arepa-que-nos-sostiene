@@ -60,15 +60,10 @@ export function TranscriptModal({
     };
   }, [slug, kind]);
 
-  const segments = state.status === 'ready'
-    ? state.transcript[language] ?? state.transcript.es
-    : undefined;
-  const translated = state.status === 'ready' && Boolean(state.transcript[language]);
-  const note = language === 'es'
-    ? t.transcriptOriginal
-    : translated
-      ? t.transcriptTranslated
-      : t.transcriptOnlySpanish;
+  // The trigger only appears for languages that are published, so there is nothing to fall back to.
+  const segments = state.status === 'ready' ? state.transcript[language] : undefined;
+  const failed = state.status === 'error' || (state.status === 'ready' && !segments);
+  const note = language === 'es' ? t.transcriptOriginal : t.transcriptTranslated;
 
   return (
     <dialog
@@ -96,11 +91,11 @@ export function TranscriptModal({
 
         <div className="transcript-body">
           {state.status === 'loading' && <p className="transcript-status">{t.transcriptLoading}</p>}
-          {state.status === 'error' && <p className="transcript-status">{t.transcriptError}</p>}
+          {failed && <p className="transcript-status">{t.transcriptError}</p>}
           {segments && (
             <>
-              <p className="transcript-note" lang={translated || language === 'es' ? undefined : 'es'}>{note}</p>
-              <div className="transcript-text" lang={translated ? language : 'es'}>
+              <p className="transcript-note">{note}</p>
+              <div className="transcript-text" lang={language}>
                 {segments.map((segment, index) => (
                   <p key={segment.time ?? index}>
                     {segment.time && <span className="transcript-time" aria-hidden="true">{segment.time}</span>}
