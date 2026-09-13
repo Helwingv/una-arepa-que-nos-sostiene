@@ -7,8 +7,8 @@ const siteBasePath = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const organizationUrl = 'https://historiadelaarepa.com/';
 
-/** Set this to the public PDF once the book is published. Empty disables the menu item. */
-const bookPdfUrl = '';
+/** Public PDF of the book. Empty disables the menu item. */
+const bookPdfUrl = 'https://www.historiadelaarepa.com/downloads/una-arepa-que-nos-sostiene.pdf';
 
 export function SiteHeader() {
   const { language, setLanguage, t } = useLanguage();
