@@ -86,7 +86,7 @@ Después de crear el repositorio en GitHub, conecte ese repositorio en Netlify y
 - El PDF `elementos una arepa que nos sostiene.pdf` es la referencia visual autoritativa. De allí se deriva la paleta negro carbón, rosa intenso y beige cálido; títulos sans-serif espaciados tipo **Avenir Next**; y énfasis editoriales en itálica tipo **Garamond**. Se usan alternativas del sistema para evitar una dependencia tipográfica y respetar licencias.
 - El documento “Listado de Cocineras/ platillo y localidad” define los 26 nombres, lugares y platos. Cuando difiere de una carpeta o archivo, se prioriza el índice del PDF y luego el documento de lista.
 - Las grabaciones de “presentación” son la fuente biográfica. Para no inventar datos, las biografías breves solo enlazan nombre, territorio y plato confirmados y remiten a la voz original.
-- Dilia Fernández aparece sin receta asociada en la lista; el sitio muestra “receta por confirmar”.
+- La grabación de Dilia Fernández identifica su receta como “morocoto rebozado”.
 - Anita González Ipuana tiene carpeta vacía. Karla Herrera Wulff y Yarenis Rosario tienen retrato pero no audio. Pastorita tiene presentación pero no grabación de receta. La interfaz informa estas ausencias con estados claros.
 - Las traducciones al inglés son editoriales y conservadoras. Se mantienen nombres propios y términos culinarios sin equivalente preciso, añadiendo una glosa breve cuando ayuda. El audio permanece en español y se etiqueta como tal.
 - Los slugs son deliberadamente estables y no cambian con el idioma.

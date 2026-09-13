@@ -124,7 +124,7 @@ export const cooks: CookProfile[] = [
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_89-nereida-martinez-presentacion-standari_el._consulado-studio.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_91-nereida-martinez-receta-standarizada_el._consulado-studio.wav',
   }),
-  cook('lucia-torrealba-london', 'Madama Lucía Torrealba London', 'El Callao, Bolívar', afro, 'banana pilé y tarkarí', 'banana pilé and tarkarí', {
+  cook('lucia-torrealba-london', 'Madama Lucía Torrealba London', 'El Callao, Bolívar', afro, 'banan pilé y tarkarí', 'banan pilé and tarkarí', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Lucia_Torrealba-El-callaojpg-scaled.jpg',
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_67-lucia-torrealba-london-presentacion-sta_el._consulado-studio.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_69-lucia-torrealba-london-receta-standariz_el._consulado-studio.wav',
@@ -171,8 +171,8 @@ export const cooks: CookProfile[] = [
   }),
   cook('esperanza-rivera-guevara', 'Esperanza Rivera Guevara', 'San Joaquín, Carabobo', central, 'panelitas de San Joaquín', 'San Joaquín biscuits', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Esperanza-Rivera-San-Joaquinjpg-scaled.jpg',
-    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_34-esperanza-guevara-san-joaquin-presentac_el._consulado-studio.wav',
-    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_36-esperanza-san-joaquin-receta-final-stan_el._consulado-studio.wav',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_121-esperanza-guevara-presentacion-standar_el._consulado-studio.wav',
+    recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_123-esperanza-guevara-receta-standarizada-_el._consulado-studio.wav',
   }),
   cook('maria-munoz', 'María Muñoz (Carmencita)', 'Valles del Tuy, Miranda', central, 'sancocho de bagre', 'catfish sancocho', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Carmencita-Valles-del-tuy.png',
@@ -204,7 +204,7 @@ export const cooks: CookProfile[] = [
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_55-juana-cumana-presentacion-final-standar_el._consulado-studio.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_57-juana-cumana-receta-final-standarizada_el._consulado-studio.wav',
   }),
-  cook('cosmelina-sucre', 'Cosmelina Sucre (Cosme)', 'Río Caribe, Paria', coast, 'coguyón oreado con camarones', 'air-dried coguyón fish with shrimp', {
+  cook('cosmelina-sucre', 'Cosmelina Sucre (Cosme)', 'Río Caribe, Paria', coast, 'corbullón oreado con camarones', 'air-dried corbullón fish with shrimp', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Cosmelina-Sucre-Paria-scaled.jpg',
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Cosmelina-Paria-Presentacion-final-Standarizada.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Cosmelina-receta-final-Standarizada.wav', 
@@ -212,11 +212,11 @@ export const cooks: CookProfile[] = [
   cook('karla-herrera-wulff', 'Karla Herrera Wulff', 'Ciudad Bolívar, Bolívar', guayana, 'pelao guayanés', 'Guayana-style pelao', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Karla-Herrera-Hoffman-ciudad-Bolivar-scaled.jpg',
     biographyUrl:
-      'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_112-karla-wulff-ciudad-bolivar-presentacio_el._consulado-studio.wav',
+      'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_117-karla-herrera-preentacion-standarizada_el._consulado-studio.wav',
     recipeUrl:
-      'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_114-karla-wulff-ciudad-bolivar-receta-mont_el._consulado-studio.wav',
+      'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_119-karla-herrera-receta-standarizada-v2_el._consulado-studio.wav',
   }),
-  cook('dilia-fernandez', 'Dilia Fernández', 'San Félix, Bolívar', guayana, 'receta por confirmar', 'recipe to be confirmed', { 
+  cook('dilia-fernandez', 'Dilia Fernández', 'San Félix, Bolívar', guayana, 'morocoto rebozado', 'battered morocoto', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Dilia-Fernandez-San-Felix-scaled.jpg', 
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_26-dilia-fernandez-presentacion-final-stan_el._consulado-studio.wav', 
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_28-dilia-fernandez-receta-final-standariza_el._consulado-studio.wav', 
