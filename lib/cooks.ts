@@ -124,7 +124,7 @@ export const cooks: CookProfile[] = [
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_89-nereida-martinez-presentacion-standari_el._consulado-studio.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_91-nereida-martinez-receta-standarizada_el._consulado-studio.wav',
   }),
-  cook('lucia-torrealba-london', 'Madama Lucía Torrealba London', 'El Callao, Bolívar', afro, 'banan pilé y tarkarí', 'banan pilé and tarkarí', {
+  cook('lucia-torrealba-london', 'Madama Lucía Torrealba London', 'El Callao, Bolívar', afro, 'banane pilée y tarkarí', 'banane pilée and tarkarí', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Lucia_Torrealba-El-callaojpg-scaled.jpg',
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_67-lucia-torrealba-london-presentacion-sta_el._consulado-studio.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_69-lucia-torrealba-london-receta-standariz_el._consulado-studio.wav',
