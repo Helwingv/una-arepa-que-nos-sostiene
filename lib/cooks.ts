@@ -134,7 +134,7 @@ export const cooks: CookProfile[] = [
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_85-copia-de-marisol-quiroz-presentacion-fi_el._consulado-studio.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_87-copia-de-marisol-quiroz-receta-final-st_el._consulado-studio.wav',
   }),
-  cook('catalina-herrera', 'Catalina Herrera', 'Tucupita, Delta Amacuro', amazon, 'jukako (ajicero)', 'jukako (pepper stew)', {
+  cook('catalina-herrera', 'Catalina Herrera', 'Tucupita, Delta Amacuro', amazon, 'jukajo (ajicero)', 'jukajo (pepper stew)', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Carolina-Herrera-Delta-1-scaled.jpg',
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_22-catalina-herrera-amazonica-presentacion_el._consulado-studio.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_24-catalina-herrera-receta-standarizada_el._consulado-studio.wav',
@@ -199,7 +199,7 @@ export const cooks: CookProfile[] = [
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_50-josefina-chepina-coro-presentacion-stan_el._consulado-studio.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_52-josefina-chepina-coro-receta-standariza_el._consulado-studio.wav',
   }),
-  cook('juana-bautista-marval', 'Juana Bautista Marval', 'Cumaná, Sucre', coast, 'cóctel de camarones', 'shrimp cocktail', {
+  cook('juana-bautista-marval', 'Juana Bautista Marval', 'Cumaná, Sucre', coast, 'coctelito cumanés', 'Cumaná-style seafood coctelito', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Juana-Marval-Cumana-scaled.jpg',
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_55-juana-cumana-presentacion-final-standar_el._consulado-studio.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_57-juana-cumana-receta-final-standarizada_el._consulado-studio.wav',
@@ -231,7 +231,7 @@ export const cooks: CookProfile[] = [
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_46-isolina-aragua-de-barcelona-presentacio_el._consulado-studio.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_48-isolina-aragua-de-barcelona-receta-fina_el._consulado-studio.wav',
   }),
-  cook('sonia-prieto', 'Sonia Prieto Guedez', 'Calabozo, Guárico', plains, 'cachapa con cochino frito', 'corn cachapa with fried pork', {
+  cook('sonia-prieto', 'Sonia Prieto Guedez', 'Calabozo, Guárico', plains, 'cachapa con cochino caldereao', 'corn cachapa with braised pork', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Sonia-Prieto-Guedez-Guarico_-scaled.jpg',
     biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_97-sonia-prieto-guarico-presentacion-final_el._consulado-studio.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_99-copia-de-sonia-prieto-receta-final-stan_el._consulado-studio.wav',
