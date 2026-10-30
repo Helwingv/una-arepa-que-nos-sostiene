@@ -238,7 +238,7 @@ export const cooks: CookProfile[] = [
   }),
   cook('luz-castejon', 'Luz Castejón', 'Maracaibo, Zulia', zulia, 'bocachico relleno asado en hoja', 'leaf-roasted stuffed bocachico fish', {
     imageUrl: 'https://talknexo.net/wp-content/uploads/2026/09/Luz-Castejon-Maracaibo-scaled.jpg',
-    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_71-luz-castejon-presentacion-standarizada_el._consulado-studio.wav',
+    biographyUrl: 'https://talknexo.net/wp-content/uploads/2026/10/Luz-Castejon-Maracaibo-Presentacion-a-48-44k.wav',
     recipeUrl: 'https://talknexo.net/wp-content/uploads/2026/09/riverside_edit_73-luz-castejon-receta-standarizada_el._consulado-studio.wav',
   }),
   cook('anita-gonzalez-ipuana', 'Anita González Ipuana', 'Comunidad Wayuu, Zulia', zulia, 'ovejo guisado, frichi y arepitas de maíz', 'stewed mutton, frichi, and corn arepitas', { 
