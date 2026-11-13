@@ -1,4 +1,4 @@
-name: Build & Deploy to cPanel
+name: Build & Deploy to Dinahosting
 
 on:
   push:
@@ -32,4 +32,4 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: ./dist/
-          server-dir: /cocineras/
+          server-dir: /www/cocineras/
